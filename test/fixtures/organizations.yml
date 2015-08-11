@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  public_name: MyString
+  type: 
+  pricing_policy: MyString
+  group_organization_id: 1
+  parent_organization_id: 1
+
+two:
+  name: MyString
+  public_name: MyString
+  type: 
+  pricing_policy: MyString
+  group_organization_id: 1
+  parent_organization_id: 1

@@ -1,34 +1,21 @@
 development:
   adapter: mysql2
-  database: shop_dev
-  host: localhost
-  username: root
-  password: qburst
-
-production:
-  adapter: mysql2
-  database: shop_dev
+  database: euroso_development
   host: localhost
   username: root
   password: qburst
 
 test:
   adapter: mysql2
-  database: shop_dev
+  database: euroso_test
   host: localhost
   username: root
   password: qburst
 
-integration1:
+production:
   adapter: mysql2
-  database: shop_dev
+  database: euroso_production
   host: localhost
   username: root
   password: qburst
 
-integration2:
-  adapter: mysql2
-  database: shop_dev
-  host: localhost
-  username: root
-  password: qburst
