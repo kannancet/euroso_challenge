@@ -5,21 +5,21 @@
 * Install dependencies and database
 
 ```ruby
-	$ bundle install
-	$ rake db:create
-	$ rake db:migrate
+$ bundle install
+$ rake db:create
+$ rake db:migrate
 ```
 
 * Run the seed file
 
 ```ruby
-	$ rake db:seed
+$ rake db:seed
 ```
 
 * Run the server and visit http://localhost:3000
 
 ```ruby
-	$ rails s
+$ rails s
 ```
 
 * Login using Email : admin@euroso.com and Password : 123qweAadmin 
@@ -30,36 +30,36 @@
 
 ##API Enpoint #1
 * GET - http://localhost:3000/api/v1/organizations/:group_organization_ids
-  group_organization_ids = Array of integers
+group_organization_ids = Array of integers
 
-  Eg: http://localhost:3000/api/v1/organizations/[3,4,5]
+Eg: http://localhost:3000/api/v1/organizations/[3,4,5]
 
 ##API Enpoint #2
 * GET - http://localhost:3000/api/v1/locations/:group_organization_id
-  group_organization_id = An integer value
+group_organization_id = An integer value
 
-  Eg: http://localhost:3000/api/v1/locations/3
+Eg: http://localhost:3000/api/v1/locations/3
 
 ##API Enpoint #3
 * POST - http://localhost:3000/api/v1/model_type_prices/:group_organization_id
-  group_organization_id = An integer value
+group_organization_id = An integer value
 
-  POST  BODY Parameters
-  app_id = APP ID from the Admin portal for the application
-  app_secret = APP SECRET from the Admin portal for the application
-  model_type_name = "Dealer" or "Show room" or "Service"
-  base_price = float value
+POST  BODY Parameters
+app_id = APP ID from the Admin portal for the application
+app_secret = APP SECRET from the Admin portal for the application
+model_type_name = "Dealer" or "Show room" or "Service"
+base_price = float value
 
 
-  Eg: http://localhost:3000/api/v1/locations/3
-   POST  BODY Parameters
-   {"app_id": "836ec399a145ffafbd7774c57e06960397b77a53bb1ccc03d4e45d95d0c31a3d",
- 	 "app_secret": "cf8dc84d17c69e17a8b9d74ec971bdb636f231d3ba7d2ad2ebfca45bdc8ae3c9",
-   "model_type_name": "Dealer",
-   "base_price": "2.0"}
+Eg: http://localhost:3000/api/v1/locations/3
+ POST  BODY Parameters
+ {"app_id": "836ec399a145ffafbd7774c57e06960397b77a53bb1ccc03d4e45d95d0c31a3d",
+	 "app_secret": "cf8dc84d17c69e17a8b9d74ec971bdb636f231d3ba7d2ad2ebfca45bdc8ae3c9",
+ "model_type_name": "Dealer",
+ "base_price": "2.0"}
 
 
 #How to run the spec ?
 ```ruby
-	$ rspec spec
+$ rspec spec
 ```
