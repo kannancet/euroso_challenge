@@ -45,3 +45,13 @@ end
 
 
 gem 'mysql2'
+
+
+group :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'simplecov', :require => false
+end
+
+gem 'doorkeeper'
+gem 'devise'

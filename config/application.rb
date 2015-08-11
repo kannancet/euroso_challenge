@@ -22,5 +22,13 @@ module EurosoChallenge
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    #Switching the test framework to Rspec
+    config.generators do |g|    
+      g.test_framework :rspec, :fixture => true
+      g.fixture_replacement :factory_girl      
+      g.view_specs false
+      g.helper_specs false
+    end
   end
 end
